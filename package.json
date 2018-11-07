@@ -1,6 +1,6 @@
 {
   "name": "callbag-timestamp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag operator that attaches a timestamp to each emitted value.",
   "main": "dist/callbag-timestamp.cjs.js",
   "module": "dist/callbag-timestamp.esm.js",

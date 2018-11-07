@@ -1,0 +1,50 @@
+{
+  "name": "callbag-timestamp",
+  "version": "0.0.0",
+  "description": "👜 Callbag operator that attaches a timestamp to each emitted value.",
+  "main": "dist/callbag-timestamp.cjs.js",
+  "module": "dist/callbag-timestamp.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" || jest --env=node",
+    "precommit": "lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "preversion": "npm test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-timestamp.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-timestamp/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-timestamp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3"
+  },
+  "dependencies": {
+    "callbag-map": "^1.0.1"
+  }
+}
